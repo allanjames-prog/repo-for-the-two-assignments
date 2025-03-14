@@ -7,6 +7,8 @@ def get_student_details():
     gender = input("Enter gender (M/F): ")
     year_of_study = int(input("Enter year of study: "))
     
+
+    
     # Collect marks
     test1 = float(input("Enter Test 1 mark: "))
     test2 = float(input("Enter Test 2 mark: "))
