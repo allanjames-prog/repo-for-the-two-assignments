@@ -1,0 +1,5 @@
+import module
+print(module.students_data)
+print("\n//////////////////////////////////////////////////////////////////////////")
+import module3
+module3.circle.details()
