@@ -32,6 +32,6 @@ def capture_student_details():
     return student
 print("\n......................................................................")
 students_data = capture_student_details()
-print(students_data)
+#print(students_data)
 print("\n--------------------------------------------")
 
