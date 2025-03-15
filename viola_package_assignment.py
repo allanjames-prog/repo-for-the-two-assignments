@@ -73,7 +73,8 @@ class Librarykeeper:
         else:
             print("The book is not in the library")
 
-"""
+"""    These will be displayed from the other module called packages ..
+Thats where they will be called to be printed
 # Create book objects
 book1 = Book("Enemy Called Average", "John L. Mason", 1998, "White", "English", 342, "Inspiration")
 book2 = Fiction("Stuck in the Desert", "Eric Mayers", 1996, "Black", "English", 900, "Fiction")
