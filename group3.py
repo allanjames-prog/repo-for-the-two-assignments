@@ -1,3 +1,6 @@
+ 
+#group 3 members ;1. Ahuriire Violah , 2.Sitati Patience, 3.Nakyigozi Syliva, 4. Laruyn Hope , 5.Lochap Faustine 6. Akello Cinderalla
+
 def students_performance():
     # Welcoming remarks
 
