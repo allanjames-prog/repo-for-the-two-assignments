@@ -1,3 +1,10 @@
+#Dina Drizella
+#Nanyonga Pervin
+#Joe Raburu
+# Anxious Nankunda
+#Uwabeza Ejidia
+#Bullen Henry
+# Madrine Nalukwago
 def capture_students():
  """ 
 Function to capture student details, calculate their final scores,
@@ -65,3 +72,4 @@ for i, student in enumerate(students, start=1):
 # Calling the function to execute
 capture_students()
 
+ 
