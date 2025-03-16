@@ -1,6 +1,7 @@
 import turtle
 import random
 
+
 # Set up the screen
 screen = turtle.Screen()
 screen.bgcolor("lightblue")  # Light blue sky background
@@ -113,3 +114,46 @@ for _ in range(3):
 # Hide the turtle and display the result
 pen.hideturtle()
 turtle.done()
+
+def draw_tree(x, y, trunk_height, trunk_width, foliage_radius):
+    # Draw trunk
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.pendown()
+    turtle.color("saddlebrown")
+    turtle.begin_fill()
+    for _ in range(2):
+        turtle.forward(trunk_width)
+        turtle.left(90)
+        turtle.forward(trunk_height)
+        turtle.left(90)
+    turtle.end_fill()
+    
+    # Draw foliage
+    turtle.penup()
+    turtle.goto(x + trunk_width / 2, y + trunk_height)
+    turtle.pendown()
+    turtle.color("green")
+    turtle.begin_fill()
+    turtle.circle(foliage_radius)
+    turtle.end_fill()
+
+def draw_forest():
+    turtle.speed(0)
+    turtle.bgcolor("grey")
+    
+    # Draw multiple trees
+    for _ in range(20):
+        x = random.randint(-300, 300)
+        y = random.randint(-200, -100)
+        trunk_height = random.randint(40, 60)
+        trunk_width = random.randint(10, 20)
+        foliage_radius = random.randint(30, 50)
+        draw_tree(x, y, trunk_height, trunk_width, foliage_radius)
+    
+    turtle.hideturtle()
+    turtle.done()
+
+if __name__ == "__main__":
+    draw_forest()
+
